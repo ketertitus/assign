@@ -17,8 +17,8 @@ hr {
     position: relative;
     overflow-x: hidden;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size:cover;
+    background-attachment:local;
 }
 
 nav {
@@ -82,7 +82,12 @@ nav {
     border-radius: 5%;
     padding: 10px;
 }
-
+.footer{
+    background-color:rgb(24, 25, 26);
+    justify-content: end;
+    text-align:end;
+    padding-right: 5%;
+}
 @font-face {
     font-family: introfont;
     src: url(assets/fonts/Paprika/Paprika-Regular.ttf);
