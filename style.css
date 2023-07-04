@@ -3,6 +3,8 @@
     margin: 0;
     font-family: bodyFont;
     color: rgb(197, 236, 240);
+    list-style: none;
+
 }
 
 hr {
@@ -14,11 +16,32 @@ hr {
 .main {
     width: 100%;
     height: 100vh;
+
     position: relative;
     overflow-x: hidden;
     background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment:local;
+    background-size: cover;
+    background-attachment: local;
+}
+.aboutDiv li div{
+    border: 1px solid rgb(168, 255, 255);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+.aboutDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aboutDiv li div:hover{
+    background-color: rgb(168, 255, 255);
+    color: rgb(27, 40, 54);
+}
+
+.wrap {
+    display: flex;
 }
 
 nav {
@@ -61,7 +84,24 @@ nav {
     font-size: 70%;
     padding: 16px;
     text-align: center;
+    width: 78%;
 }
+
+.side {
+    width: 30%;
+    margin-right: 2%;
+}
+
+.side,
+.side ul li,
+.side ul li a {
+    color: white;
+}
+
+li a:hover {
+    color: rgb(21, 209, 36);
+}
+
 
 .mainimage {
     display: flex;
@@ -82,12 +122,24 @@ nav {
     border-radius: 5%;
     padding: 10px;
 }
-.footer{
-    background-color:rgb(24, 25, 26);
+
+.footer {
+    background-color: rgb(27, 40, 54);
     justify-content: end;
-    text-align:end;
+    text-align: start;
     padding-right: 5%;
 }
+
+.footer,
+.footer ul li,
+.footer ul li a {
+    color: white;
+    font-family: foot;
+    font-size: small;
+    padding-left: 1%;
+    text-align: center;
+}
+
 @font-face {
     font-family: introfont;
     src: url(assets/fonts/Paprika/Paprika-Regular.ttf);
@@ -101,4 +153,9 @@ nav {
 @font-face {
     font-family: name;
     src: url(assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: foot;
+    src: url(assets/fonts/Fasthand/Fasthand-Regular.ttf);
 }
