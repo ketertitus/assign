@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <title>review2</title>
+  <style>
+    .main {
+      background-image: url(assets/images/pramod.jpg);
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="Name">
+        <img style="width: 20%;" src="assets/images/logo/logoclean.png">
+        <div class="motto">Dawn of Innovation, Dusk of Limitations<br>
+          Crafting Digital Solutions, Illuminating Technological Horizons</div>
+      </div>
+    </nav>
+
+    <form>
+      <style>
+        .motto {
+
+          width: 80%;
+        }
+
+        form {
+          padding: 15px;
+        }
+
+        select {
+          row-gap: 20px;
+        }
+
+        table tr td {
+          background-color: rgb(25, 26, 26);
+        }
+
+        form * {
+          background-color: transparent;
+          border-width: 1px;
+          border-color: rgb(69, 126, 126);
+          padding: 3px;
+        }
+
+        [type="submit"] {
+          margin-left: 30%;
+          border-radius: 5%;
+        }
+      </style>
+      <table>
+        <tr>
+          <td>First-name:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Last-name:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="Password" /></td>
+        </tr>
+        <tr>
+          <td>ConfirmPassword:</td>
+          <td><input type="Password" /></td>
+        </tr>
+      </table>
+      <br />
+
+
+      Gender:<br />
+      <input type="radio" name="gender" />Male<br />
+      <input type="radio" name="gender" />Female<br /><br />
+      Languages:<br />
+      Engllish<input type="checkbox" checked="true" /><br />
+      Swahili<input type="checkbox" /><br /><br />
+      select prefered unit:<br />
+      <select type="dropdown">
+        <option value="a">Web App Development</option>
+        <option value="b">Mobile App development</option>
+        <option value="c">General programming</option>
+        <option value="d">Project Management</option>
+      </select><br /><br />
+      Description(optional):<br />
+      <textarea name="description" rows="4">
+    </textarea><br /><br />
+      <input type="submit" />
+    </form>
+
+</html>

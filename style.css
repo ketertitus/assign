@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: bodyFont;
+    color: rgb(197, 236, 240);
+}
+
+hr {
+    margin: 5px;
+    margin: 5Px;
+    border-top: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    width: 95%;
+    padding: 20 px auto;
+    position: sticky;
+    z-index: 1;
+    display: inline-block;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    font-family: name;
+    padding-left: 3%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-left: 5;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    color: rgb(168, 255, 255);
+    text-decoration: none;
+}
+
+.intro p {
+    font-family: introfont;
+    font-size: 70%;
+    padding: 16px;
+    text-align: center;
+}
+
+.mainimage {
+    display: flex;
+}
+
+.motto {
+    width: 70%;
+    text-align: end;
+    padding-top: 5%;
+
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 15%;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: introfont;
+    src: url(assets/fonts/Paprika/Paprika-Regular.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(assets/fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: name;
+    src: url(assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
