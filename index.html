@@ -1,11 +1,30 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>review2</title>
+    <title>Alpha-jiri</title>
     <style>
       .main {
         background-image: url(assets/images/tech003.jpg);
       }
+      .meImg {
+        padding: 2%;
+        width: 40%;
+        border-radius: 50%;
+      }
+      #me{
+        padding: 1vw;
+        font-size:1.2vw;
+      }
+      @media screen and (min-width:450px){
+        #me{
+          width:15%;
+        }
+      } 
     </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="connect.js">
+      
+    </script>
     <link type="text/css" rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,6 +34,10 @@
   <body>
     <div class="main">
       <nav>
+        <div class="wrap" >
+          <div id = "me">
+            <span id="hold">You are not signed in</span>
+          </div>
         <div class="nav-links">
           <ul>
             <li><a href="#">Home</a></li>
@@ -24,24 +47,24 @@
           </ul>
           <hr />
         </div>
+      </div>
         <div class="mainimage">
-          <img style="width: 30%" src="assets/images/logo/logoclean.png" />
+          <div style="width: 30%;" id="pref"></div>
           <div class="motto">
-            Dawn of Innovation, Dusk of Limitations<br />
+            Welcome to Alpha-jiri<br />
             Crafting Digital Solutions, Illuminating Technological Horizons
           </div>
         </div>
       </nav>
+      <img class="homeImg" src="assets/images/hardware.jpg">
       <div class="wrap">
         <div class="intro">
-          <img style="width: 30%" src="assets/images/tech001.jpg" />
           <p>
             Welcome to Alphajiri, where innovation meets your needs with
             unwavering commitment. As a customer-centric technology company, we
             extend our warmest greetings and invite you to embark on a
             transformative journey with us.
           </p>
-
           <p>
             At Alphajiri, we understand that your success lies at the heart of
             our mission. Whether you're an ambitious startup, a growing
@@ -51,6 +74,7 @@
             software and hardware offerings to meet your unique requirements,
             ensuring seamless integration, efficiency, and scalability.
           </p>
+          <img class="homeImg" src="assets/images/reachin.png">
           <p>
             Trust in our unwavering dedication to quality, reliability, and
             innovation as we work hand in hand to unlock the true potential of
@@ -64,25 +88,31 @@
           Tell(toll free): 0800 000 000
           <ul>
             <li>
+              <p>
               you can also write to us through<br /><a href="#"
                 >info_desk@alphajiri.com</a
               >
+            </p>
             </li>
             <li>
+              <p>
               or visit us at:<a href="#"
                 >Alhajiri Towers,waiyaki st.<br />Nairobi,kenya</a
               >
+            </p>
             </li>
             <li>Private bag: 020-490</li>
             Social media:
-            <li><img src="" /><a href="#">@alphajiri</a></li>
-            <li><a href="#">alphajiri</a></li>
+            <p>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>@alphajiri</a><br>
+              <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i>alphajiri</a></li>
+          </p>
           </ul>
         </div>
       </div>
       <footer class="footer">
         <ul>
-          <li style = "font-size: medium;">We would love to hear from you,get in contact with us: Tell(toll free): 0800
+          <li>We would love to hear from you,get in contact with us: Tell(toll free): 0800
             000 000</li>
           <li>
             you can also write to us through<a href="#"

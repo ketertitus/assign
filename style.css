@@ -1,10 +1,13 @@
 * {
-    padding: 0;
-    margin: 0;
+
     font-family: bodyFont;
     color: rgb(197, 236, 240);
     list-style: none;
 
+}
+
+body {
+    margin: 0;
 }
 
 hr {
@@ -16,36 +19,80 @@ hr {
 .main {
     width: 100%;
     height: 100vh;
-    
+
     position: relative;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
 }
-.aboutDiv li div{
-    border: 1px solid rgb(168, 255, 255);
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
+
+ul {
+    padding-inline-start: 0;
 }
-.aboutDiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.aboutDiv li div:hover{
+
+.aboutDiv li div:hover {
     background-color: rgb(220, 252, 252);
     color: rgb(27, 40, 54);
     font-family: name;
 }
-.aboutDiv li div b{
-color: rgb(23, 205, 230);
+
+.aboutDiv li div b {
+    color: rgb(23, 205, 230);
 }
 
-.wrap {
-    display: flex;
+@media screen and (min-width: 450px) {
+
+    /*full screen*/
+    .wrap {
+        display: flex;
+    }
+
+    .side {
+        width: 35%;
+        padding-right: 10px;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .aboutDiv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutDiv li div {
+        border: 1px solid rgb(168, 255, 255);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    /*small screen*/
+    .aboutDiv {
+        justify-content: center;
+    }
+
+    .aboutDiv li div {
+        border: 1px solid rgb(168, 255, 255);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 1.4vw;
+    }
+
+    textarea {
+        display: flex;
+        width: 97%;
+    }
+
+    .side {
+        display: none;
+    }
 }
 
 nav {
@@ -55,6 +102,11 @@ nav {
     z-index: 1;
     display: inline-block;
     align-items: center;
+    box-shadow: 1vw;
+}
+
+nav div ul {
+    font-size: 2vw;
 }
 
 .name {
@@ -74,26 +126,31 @@ nav {
 
 .nav-links ul li {
     display: inline-block;
-    margin-left: 5;
     list-style: none;
 }
 
 .nav-links ul li a {
     color: rgb(168, 255, 255);
     text-decoration: none;
-}
-.intro p,.conclude p{font-family: introfont;
-    font-size: 90%;
-    padding: 16px;
-    text-align: center;}
-.intro p {
-    width: 78%;
+    margin-left: 20px;
 }
 
-.side {
-    width: 30%;
-    margin-right: 2%;
+.intro p,
+.conclude p {
+    font-family: introfont;
+    font-size: 1.4vw;
+    padding: 16px;
+    text-align: center;
 }
+
+.intro {
+    padding-right: 5%;
+}
+
+.homeImg {
+    max-width: 100%;
+}
+
 
 .side,
 .side ul li,
@@ -105,16 +162,22 @@ li a:hover {
     color: rgb(21, 209, 36);
 }
 
+fieldset *,
+.submit {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: rgb(69, 126, 126);
+    padding: 3px;
+}
 
 .mainimage {
     display: flex;
 }
 
 .motto {
-    width: 70%;
+    width: 100%;
     text-align: end;
-    padding-top: 5%;
-
+    font-size: 1.4vw;
 }
 
 .img1,
@@ -133,12 +196,12 @@ li a:hover {
     padding-right: 5%;
 }
 
-.footer,
+.footer ,
 .footer ul li,
 .footer ul li a {
     color: white;
     font-family: foot;
-    font-size: small;
+    font-size: 1.2vw;
     padding-left: 1%;
     text-align: center;
 }

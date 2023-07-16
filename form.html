@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>review2</title>
+  <title>Sign up</title>
   <style>
     .main {
       background-image: url(assets/images/pramod.jpg);
     }
   </style>
-  <link type="text/css" rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="connect.js"></script>
+  <link rel="stylesheet" type= "text/css" href="style.css">
 </head>
 
 <body>
@@ -23,21 +26,26 @@
         </ul>
       </div>
       <div class="Name">
-        <img style="width: 20%;" src="assets/images/logo/logoclean.png">
-        <div class="motto">Dawn of Innovation, Dusk of Limitations<br>
+        <img style="width: 10%;" src="assets/images/logo/alphajiri-removebg-white.png">
+        <div class="motto" style="width: 100%;">Welcome to Alpha-jiri<br>
           Crafting Digital Solutions, Illuminating Technological Horizons</div>
       </div>
     </nav>
 
-    <form>
+    <fieldset>
       <style>
         .motto {
 
           width: 80%;
         }
 
-        form {
-          padding: 15px;
+        fieldset {
+          padding-top: 3vw;
+          margin-bottom: 3vw;
+          
+        }
+        fieldset  * ,fieldset{
+          font-size: 2vw;
         }
 
         select {
@@ -45,59 +53,85 @@
         }
 
         table tr td {
-          background-color: rgb(25, 26, 26);
-        }
-
-        form * {
           background-color: transparent;
-          border-width: 1px;
-          border-color: rgb(69, 126, 126);
-          padding: 3px;
         }
 
-        [type="submit"] {
-          margin-left: 30%;
+        table tr td input {
+          border: 1px solid;
+        }
+
+        
+
+        .submit {
+          margin-left: 3vw;
+          justify-self: end;
           border-radius: 5%;
         }
       </style>
+      <legend id="legendary">Sign up</legend>
       <table>
         <tr>
           <td>First-name:</td>
-          <td><input type="text" /></td>
+          <td><input type="text" id="firstName" /></td>
         </tr>
         <tr>
           <td>Last-name:</td>
-          <td><input type="text" /></td>
+          <td><input type="text" id="lastName" /></td>
         </tr>
         <tr>
           <td>Password:</td>
-          <td><input type="Password" /></td>
+          <td><input type="Password" id="password" /></td>
         </tr>
         <tr>
           <td>ConfirmPassword:</td>
-          <td><input type="Password" /></td>
+          <td><input type="Password" id="confirmPassword" /></td>
+        </tr>
+        <tr>
+          <td>email adress: </td>
+            <td><input type="Email" id="email" autocomplete="email"/><br /></td>
         </tr>
       </table>
       <br />
 
 
       Gender:<br />
-      <input type="radio" name="gender" />Male<br />
-      <input type="radio" name="gender" />Female<br /><br />
-      Languages:<br />
-      Engllish<input type="checkbox" checked="true" /><br />
-      Swahili<input type="checkbox" /><br /><br />
+      <input type="radio" name="gender" value="male"/>Male<br />
+      <input type="radio" name="gender" value="female"/>Female<br /><br />
       select prefered unit:<br />
-      <select type="dropdown">
+      <select type="dropdown" id="service">
         <option value="a">Web App Development</option>
         <option value="b">Mobile App development</option>
         <option value="c">General programming</option>
         <option value="d">Project Management</option>
       </select><br /><br />
       Description(optional):<br />
-      <textarea name="description" rows="4">
+      <textarea name="description" rows="4" id="discription">
     </textarea><br /><br />
-      <input type="submit" />
-    </form>
-
+      I have read the about <a href="aboutUs.html">Alphajiri</a> and agree with the organization's goals and values
+      <input type="checkbox" value="true" id="agree" required><br />
+     
+      <br/>
+    </fieldset>
+    <button class="submit" type="submit" onclick="Submit()">Sign up</button>
+    <footer class="footer">
+      <ul>
+        <li style = "font-size: medium;">We would love to hear from you,get in contact with us: Tell(toll free): 0800
+          000 000</li>
+        <li>
+          you can also write to us through<a href="#"
+            >info_desk@alphajiri.com</a
+          >
+        </li>
+        <li>
+          or visit us at:<a href="#"
+            >Alhajiri Towers,waiyaki st.,Nairobi,kenya</a
+          >
+        </li>
+        <li>Private bag: 020-490</li>
+        <li>
+          
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>@alphajiri</a>
+          <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i>alphajiri</a></li>
+      </ul>
+    </footer>
 </html>
