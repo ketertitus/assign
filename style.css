@@ -67,10 +67,18 @@ ul {
         margin: 10px;
         padding: 10px;
         width: 200px;
+        color: aquamarine;
+    }
+    *{
+        font-size: 1.4vw;
+        
     }
 }
 
 @media screen and (max-width: 450px) {
+    *{
+        font-size: 3.5vw;
+    }
 
     /*small screen*/
     .aboutDiv {
@@ -82,7 +90,6 @@ ul {
         border-radius: 5px;
         margin: 10px;
         padding: 10px;
-        font-size: 1.4vw;
     }
 
     textarea {
@@ -105,9 +112,6 @@ nav {
     box-shadow: 1vw;
 }
 
-nav div ul {
-    font-size: 2vw;
-}
 
 .name {
     display: flex;
@@ -138,16 +142,19 @@ nav div ul {
 .intro p,
 .conclude p {
     font-family: introfont;
-    font-size: 1.4vw;
+    font-size: 1.4;
     padding: 16px;
     text-align: center;
+    
 }
-
+.last{
+    color: rgb(35, 114, 88);
+}
 .intro {
     padding-right: 5%;
 }
 
-.homeImg {
+.homeImg ,.africa{
     max-width: 100%;
 }
 
@@ -177,7 +184,6 @@ fieldset *,
 .motto {
     width: 100%;
     text-align: end;
-    font-size: 1.4vw;
 }
 
 .img1,
@@ -201,7 +207,6 @@ fieldset *,
 .footer ul li a {
     color: white;
     font-family: foot;
-    font-size: 1.2vw;
     padding-left: 1%;
     text-align: center;
 }
